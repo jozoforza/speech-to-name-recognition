@@ -2,6 +2,7 @@ const list = require("../list.json");
 function findMatch(transcription) {
 	let result = [];
 	transcription = transcription.split(" ");
+
 	for (const person of list) {
 		if (person.unique && includesName(transcription, person.unique)) {
 			result.push({
