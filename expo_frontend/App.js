@@ -129,7 +129,7 @@ export default function AudioRecorder() {
 	function selectItem(item) {
 		setSelectedItem(item);
 		setView("single");
-		setMessage(`🖐️Cau ${item.name} !`);
+		setMessage(`🖐️Hi ${item.name} !`);
 	}
 	useEffect(() => {
 		async function playMelody() {
@@ -293,7 +293,7 @@ export default function AudioRecorder() {
 				style={styles.buttonContainer}
 			>
 				<Text style={styles.infoButtText}>
-					{isRecording ? "Pocuvam..." : "Podrz a hovor"}
+					{isRecording ? "Listening..." : "Hold and speak"}
 				</Text>
 			</TouchableOpacity>
 			<View style={styles.initButton}>
